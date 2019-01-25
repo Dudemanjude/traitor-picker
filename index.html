@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Traitor Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <script src="lodash.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div style="width: 32em; margin: auto;" class="box">
+            <div>
+                <h1 class="title">Role Picker</h1>
+                <div class="label">
+                    <h2 class="label">Player Number: <span id="playerNum"></span></h2>
+                    <h2 class="label">You are a: <span id="role"></span></h2>
+                </div>
+                <div class="buttons has-addons">
+                    <button class="button is-primary" id="nextPlayer">Next Player</button>
+                    <button class="button is-primary" id="reveal">Reveal Role</button>
+                </div>
+                <div class="field">
+                    <label class="label">Number of Players</label>
+                    <input type="text" class="input" id="numPlayers">
+                </div>
+                <div class="field">
+                    <label class="label">Number of Traitors</label>
+                    <input type="text" class="input" id="numTraitors">
+                </div>
+                <button class="button is-danger" id="newGame">New Game</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
